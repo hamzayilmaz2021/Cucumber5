@@ -11,4 +11,7 @@ public class LoginPage extends BasePage {
     @FindBy ( name = "sifre")
     public WebElement sifreInput;
 
+    @FindBy ( xpath = "//a[text() = 'Şifremi Unuttum']")
+    public WebElement sifremiUnuttumLink;
+
 }

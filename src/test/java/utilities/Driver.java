@@ -1,6 +1,7 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -55,6 +56,12 @@ public class Driver {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
+        //Dimension d = new Dimension(120,120);
+        //driver.manage().window().setSize(d);
+
+        // Tarayıcıyı istediğimiz boyutta nasıl kullanabiliriz? 800x1200
+        // Alt-Soru : WebSayfasının mobil testi nasıl yapılır..
+
         return driver;
     }
 
@@ -70,3 +77,48 @@ public class Driver {
 
 }
 
+
+
+
+// EPIC -> Ev Değişimi Hizmeti
+
+//        -> Ev Değişimi İlan Oluşturma - Epic
+//           -->  Ev Tipi Seçimi - User Story
+//           -->  Adres Bilgisi - User Story
+//           -->  Kullanım Alanları - User Story
+
+//        -> Ev Değişimi İlan Arama
+//        -> Ev Değişimi İlan Görüntüleme
+
+
+// User Story'ler bizim önümüze hazır olarak geliyor.. (Product Owner Yazıyor)
+// Örnek :  100 US
+// 5 tane tester = 2 Haftalık Sprintte 10 Gün = 5 * 10 = 50 Birimlik İş Yükü ---> Takım Kapasitesi
+// 1. User Story => 8 Point
+// 2. User Story => 5 Point
+// 3. User Story => 3 Point
+// 4. User Story => 2 Point
+// 5. User Story => 8 Point
+// 6. User Story => 8 Point
+// 7. User Story => 8 Point
+// 8. User Story => 5 Point
+// 9. User Story => 3 Point
+
+// 91..
+
+// Sprint Planning Toplantısı ----> User Story Puanlama
+
+//10. User Story => 5 Point
+//11. User Story => 8 Point
+//12. User Story => 3 Point
+
+// 82..
+// 70..
+
+// As a <type of user>, I want <activity> so that <business value>.
+// <Kullanıcı> olarak, <aktivite> gerçekleştirmek istiyorum. Böylece <fayda> sağlayabilirim.
+
+// Ben bir kullanıcı olarak, ev tipi seçebilmek istiyorum. Böylece ilanların içerisinde sınıflandırma yapabilirim.
+// Acceptance Criterias -> 1. Kullanıcı giriş ypamış olmalıdır.
+//                         2. "Ev Tipi" başlığı ve "Değişim yapmak istediğiniz evinizin türünü belirtiniz" açıklaması görünür olmalıdır.
+//                         3. "Müstakil Ev", "Apartman Dairesi", "Stüdyo Daire" seçenekleri görünür olmalıdır.
