@@ -30,3 +30,34 @@ Feature: US_056 Bir kullanıcı olarak "Oda Kirala & Değişim" ilan oluşturma 
 
   Scenario: US_056	TC_006	"1 / 11" yazısı görünür olmalıdır.
     Then kullanici step durumu bilgisinin "1 / 11" oldugunu dogrular
+
+
+  #Smoke Test Nedir ? Regression Test Nedir ?
+  #Alt Soru : Bu testleri nerede çalıştırırsın ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
